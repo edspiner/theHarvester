@@ -19,7 +19,7 @@ class search_linkedin:
 
     def do_search(self):
         try:
-            urly="http://"+ self.server + "/search?num=100&start=" + str(self.counter) + "&hl=en&meta=&q=site%3Alinkedin.com/in%20" + self.word
+            urly="http://"+ self.server + "/search?num=100&start=" + str(self.counter) + "&hl=en&meta=&q=site%3Alinkedin.com%20intext%3A" + self.word
         except Exception, e:
             print e
         try:
